@@ -1,0 +1,5 @@
+C:\Users\disha\Desktop\MInesweeper\TestProject\obj\Debug\net6.0\TestProject.csproj.AssemblyReference.cache
+C:\Users\disha\Desktop\MInesweeper\TestProject\obj\Debug\net6.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\disha\Desktop\MInesweeper\TestProject\obj\Debug\net6.0\TestProject.AssemblyInfoInputs.cache
+C:\Users\disha\Desktop\MInesweeper\TestProject\obj\Debug\net6.0\TestProject.AssemblyInfo.cs
+C:\Users\disha\Desktop\MInesweeper\TestProject\obj\Debug\net6.0\TestProject.csproj.CoreCompileInputs.cache

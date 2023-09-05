@@ -5,8 +5,9 @@
     "\\bin\\Debug",
     "\\obj",
     "\\obj\\Release",
-    "\\Properties"
+    "\\Properties",
+    "\\TestProject"
   ],
-  "SelectedNode": "\\Form1.cs",
+  "SelectedNode": "\\TestProject\\UnitTest1.cs",
   "PreviewInSolutionExplorer": false
 }

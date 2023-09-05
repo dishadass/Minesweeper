@@ -1,7 +1,10 @@
 MineSweeper Game User Documentation
 
-Welcome to MineSweeper, a classic puzzle game that challenges your logical thinking and memory. This user guide will walk you through the rules, objective, and controls of the game to help you get started and enjoy your MineSweeper experience.
-Table of Contents
+
+
+##How to run the game?
+Clone the repository and open it using visual studio.
+Select Program.cs file and then run.##
 
     
 
