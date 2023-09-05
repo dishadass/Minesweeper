@@ -35,8 +35,8 @@ The project is structured as follows:
 - **Properties**: Contains application-specific settings.
 - **.gitignore**
 - **App.config file**
--**README.md**
-_ **MineSweeper.csproj**
+- **README.md**
+- **MineSweeper.csproj**
 
 
 
