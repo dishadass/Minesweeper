@@ -118,7 +118,7 @@ When a square is clicked, the algorithm counts the number of mines in adjacent s
 
 #### 4.3. Discovering Safe Squares
 
-When clicking on an empty square, a recursive algorithm discovers all adjacent safe squares by exploring neighboring squares until it reaches squares with numbers. It prevents uncovering mines.
+When clicking on an empty square, a recursive algorithm  discovers all adjacent safe squares by exploring neighboring squares until it reaches squares with numbers. It prevents uncovering mines.
 
 ### 5. Customization Options
 
