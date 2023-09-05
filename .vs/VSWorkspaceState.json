@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\bin",
+    "\\bin\\Debug",
     "\\obj",
+    "\\obj\\Release",
     "\\Properties"
   ],
-  "SelectedNode": "\\Program.cs",
+  "SelectedNode": "\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
