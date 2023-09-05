@@ -19,6 +19,7 @@ This developer documentation provides an in-depth overview of the MineSweeper co
 5. **Customization Options**
 6. **Conclusion**
 
+
 ### 1. Introduction
 
 MineSweeper is a classic puzzle game implemented in C# using Windows Forms. The game consists of uncovering safe squares on a grid while avoiding hidden mines. This documentation will delve into the code structure, class details, and the algorithms used in the game.
@@ -32,6 +33,12 @@ The project is structured as follows:
 - **Field.cs**: Handles the game logic and grid operations.
 - **Program.cs**: The entry point of the application.
 - **Properties**: Contains application-specific settings.
+- **.gitignore**
+- **App.config file**
+-**README.md**
+_ **MineSweeper.csproj**
+
+
 
 ### 3. Class Documentation
 
