@@ -17,16 +17,16 @@ namespace MineSweeper
         {
             InitializeComponent();
         }
-        public Form2(String text,int row, int col,int size,int mines) : this(){
+        public Form2(String text,int row, int col,int size,int mines) : this(){ //calling default constructor
             this.Text = text; //setting title
             field = new Field(row, col,mines);
             this.ClientSize = new Size(row * size, col * size); //new instance of the Field class
-            buttons = new Button[row][];
-            for (int i = 0; i < row; i++)
+            buttons = new Button[row][]; //minesweeper game grid
+            for (int i = 0; i < row; i++)// iterating over all cells and creating button control for them
                 buttons[i] = new Button[col];
             foreach (int i in Enumerable.Range(0,row))
                 foreach (int j in Enumerable.Range(0,col))
-                {
+                {// each button is given default values before the first click
                     buttons[i][j] = new Button();
                     buttons[i][j].Text = "";
                     buttons[i][j].BackColor = Color.White;
@@ -38,7 +38,7 @@ namespace MineSweeper
                     this.Controls.Add(buttons[i][j]);
                 }
         }
-        private void Button_Click(object sender, MouseEventArgs e) {
+        private void Button_Click(object sender, MouseEventArgs e) { //identifies cell clicked by extracting row, col
             Button b = (Button)sender;
             int temp = b.Name.IndexOf(",");
             int click_x = Int16.Parse(b.Name.Substring(0, temp));
@@ -53,17 +53,17 @@ namespace MineSweeper
                     if (this.field.IsMine(click_x, click_y))
                     {
                         b.BackColor = Color.Red;
-                        MessageBox.Show("Game Over! You clicked on a mine!");
+                        MessageBox.Show("Game Over!");
                         break;
                     }
                     if (this.field.Discovered.Contains(click_x * buttons[0].Length + click_y))
                         break;
-                    foreach (int k in this.field.GetSafeIsland(click_x, click_y))
+                    foreach (int k in this.field.GetSafeIsland(click_x, click_y))//settings for free cells
                     {
                         int i = k / buttons[0].Length;
                         int j = k % buttons[0].Length;
                         buttons[i][j].BackColor = Color.LightGray;
-                        int m = this.field.CountMines(i, j);
+                        int m = this.field.CountMines(i, j);// settings if there are mines around a specific cell
                         if (m > 0) {
                             buttons[i][j].Text = m + "";
                             buttons[i][j].BackColor = Color.LightBlue;
@@ -71,18 +71,18 @@ namespace MineSweeper
                             buttons[i][j].Enabled = false;
                     }
                     if(field.Win())
-                        MessageBox.Show("Congratulations! You discovered all safe squares!");
+                        MessageBox.Show("You win!");
                     break;
                 case MouseButtons.Right:
                     // Right click
-                    if (this.field.Discovered.Contains(click_x * buttons[0].Length + click_y))
+                    if (this.field.Discovered.Contains(click_x * buttons[0].Length + click_y)) //players cannot flag/unflag cells that have already been revealed
                         break;
                     if(field.Flagged.Contains(click_x * buttons[0].Length + click_y))
                     {
                         b.BackColor = Color.White;
                         field.Flagged.Remove(click_x * buttons[0].Length + click_y);
                     }
-                    else
+                    else   // if cell is not flagged, color changes to green
                     {
                         b.BackColor = Color.Green;
                         field.Flagged.Add(click_x * buttons[0].Length + click_y);
@@ -93,7 +93,7 @@ namespace MineSweeper
                         break;
                     int Flagged_Count = 0;
                     foreach (int k in this.field.GetNeighbors(click_x, click_y))
-                        if (field.Flagged.Contains(k))
+                        if (field.Flagged.Contains(k))//counting flagged cells through iteration
                             Flagged_Count++;
                     if (this.field.CountMines(click_x, click_y) != Flagged_Count)
                         break;
@@ -104,7 +104,7 @@ namespace MineSweeper
                         if (this.field.IsMine(k / buttons[0].Length, k % buttons[0].Length))
                         {
                             b.BackColor = Color.Red;
-                            MessageBox.Show("Game Over! You clicked on a mine!");
+                            MessageBox.Show("Game Over!!");
                             break;
                         }
                         foreach (int l in this.field.GetSafeIsland(k/ buttons[0].Length, k% buttons[0].Length))
@@ -122,7 +122,7 @@ namespace MineSweeper
                                 buttons[i][j].Enabled = false;
                         }
                         if (field.Win())
-                            MessageBox.Show("Congratulations! You discovered all safe squares!");
+                            MessageBox.Show("you win!!");
                     }
                     break;
             }
