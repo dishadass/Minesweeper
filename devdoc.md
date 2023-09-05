@@ -4,6 +4,7 @@
 # MineSweeper Developer Documentation
 
 This developer documentation provides an in-depth overview of the MineSweeper codebase, explaining the purpose of each class, its methods, properties, and the algorithms used in the game.
+The graphical user interface of the game was designed using Windows Forms.
 
 ## Table of Contents
 1. **Introduction**
