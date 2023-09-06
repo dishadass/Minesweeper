@@ -56,6 +56,12 @@ namespace MineSweeper
                         MessageBox.Show("Game Over! You clicked on a mine!");
                         break;
                     }
+                    if (this.field.Isguesed(click_x, click_y))
+                    {
+                        b.BackColor = Color.Red;
+                        MessageBox.Show("Game Over! You tried to guess.");
+                        break;
+                    }
                     if (this.field.Discovered.Contains(click_x * buttons[0].Length + click_y))
                         break;
                     foreach (int k in this.field.GetSafeIsland(click_x, click_y))

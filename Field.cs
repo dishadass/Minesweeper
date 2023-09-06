@@ -37,6 +37,28 @@ namespace MineSweeper
         {
             return Mine_Map[i][j];
         }
+        internal bool Isguesed(int i, int j) //guessing is punished
+        {
+            if (Discovered.Count == 0)
+            {
+                return false;
+            }
+            if (
+                !Discovered.Contains((i - 1) * this.Col + j - 1) &&
+                !Discovered.Contains((i - 1) * this.Col + j) &&
+                !Discovered.Contains((i - 1) * this.Col + j + 1) &&
+                !Discovered.Contains(i * this.Col + j - 1) &&
+                !Discovered.Contains(i * this.Col + j + 1) &&
+                !Discovered.Contains((i + 1) * this.Col + j + 1) &&
+                !Discovered.Contains((i + 1) * this.Col + j) &&
+                !Discovered.Contains((i + 1) * this.Col + j + 1)
+                )  
+                {
+                    return true;
+                }
+            return false;
+        }
+
         //initialises the game board by placing mines and starting the game
         internal void Initialize(int first_click_x, int first_click_y)
         {   //making sure mines are not placed after the first click

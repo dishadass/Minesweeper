@@ -9,3 +9,14 @@ C:\Users\disha\Desktop\MInesweeper\obj\Debug\MineSweeper.csproj.GenerateResource
 C:\Users\disha\Desktop\MInesweeper\obj\Debug\MineSweeper.csproj.CoreCompileInputs.cache
 C:\Users\disha\Desktop\MInesweeper\obj\Debug\MineSweeper.exe
 C:\Users\disha\Desktop\MInesweeper\obj\Debug\MineSweeper.pdb
+C:\Users\disha\Desktop\test\Minesweeper\obj\Debug\MineSweeper.csproj.AssemblyReference.cache
+C:\Users\disha\Desktop\test\Minesweeper\obj\Debug\MineSweeper.MainForm.resources
+C:\Users\disha\Desktop\test\Minesweeper\obj\Debug\MineSweeper.Form2.resources
+C:\Users\disha\Desktop\test\Minesweeper\obj\Debug\MineSweeper.csproj.GenerateResource.cache
+C:\Users\disha\Desktop\test\Minesweeper\obj\Debug\MineSweeper.exe
+C:\Users\disha\Desktop\test\Minesweeper\obj\Debug\MineSweeper.pdb
+C:\Users\disha\Desktop\test\Minesweeper\obj\Debug\MineSweeper.Properties.Resources.resources
+C:\Users\disha\Desktop\test\Minesweeper\obj\Debug\MineSweeper.csproj.CoreCompileInputs.cache
+C:\Users\disha\Desktop\test\Minesweeper\bin\Debug\MineSweeper.exe.config
+C:\Users\disha\Desktop\test\Minesweeper\bin\Debug\MineSweeper.exe
+C:\Users\disha\Desktop\test\Minesweeper\bin\Debug\MineSweeper.pdb
