@@ -123,7 +123,7 @@ namespace MineSweeper
             Form2 f = null;
             row = col = 9;
             mines = 10;
-            text = "Easy";
+            text = "Beginner";
             int size = Math.Min(30, 1000 / Math.Max(row, col));
             counter++;
             openGames.Text = " ";
@@ -143,7 +143,7 @@ namespace MineSweeper
             Form2 f = null;
             row = col = 16;
             mines = 40;
-            text = "Medium";
+            text = "Intermediate";
             int size = Math.Min(30, 1000 / Math.Max(row, col));
             counter++;
             openGames.Text = " ";
